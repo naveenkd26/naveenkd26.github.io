@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous">
+        </script>
+        <!--https://www.imgonline.com.ua/eng/cut-photo-into-pieces-result.php-->
+        <script>
+            
+            $(document).ready(function(){
+                $.ajax({
+                    url: 'http://localhost:8080/images/image_part_001.jpg',
+                    context: document.body
+                }).done(function() {
+                    console.log('IMage loaded ########');
+                });
+            });
+            
+        </script>
+    </head>
+    <body>
+        Hello there!
+    </body>
+</html>

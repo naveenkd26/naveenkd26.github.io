@@ -1,0 +1,278 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/kumarn/.nvm/versions/node/v4.5.0/bin/node',
+1 verbose cli   '/Users/kumarn/.nvm/versions/node/v4.5.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '@angular/animations@4.0.2',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose install initial load of /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/package.json
+5 warn package.json angular2@1.0.0 No description
+6 warn package.json angular2@1.0.0 No repository field.
+7 warn package.json angular2@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/rxjs/package.json
+9 verbose installManyTop reading scoped package data from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/zone.js/package.json
+10 verbose installManyTop reading scoped package data from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/core/package.json
+11 verbose readDependencies loading dependencies from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/package.json
+12 silly cache add args [ '@angular/animations@4.0.2', null ]
+13 verbose cache add spec @angular/animations@4.0.2
+14 silly cache add parsed spec Result {
+14 silly cache add   raw: '@angular/animations@4.0.2',
+14 silly cache add   scope: '@angular',
+14 silly cache add   name: '@angular/animations',
+14 silly cache add   rawSpec: '4.0.2',
+14 silly cache add   spec: '4.0.2',
+14 silly cache add   type: 'version' }
+15 silly addNamed @angular/animations@4.0.2
+16 verbose addNamed "4.0.2" is a plain semver version for @angular/animations
+17 silly mapToRegistry name @angular/animations
+18 silly mapToRegistry scope (from package name) @angular
+19 verbose mapToRegistry no registry URL found in name for scope @angular
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry data Result {
+22 silly mapToRegistry   raw: '@angular/animations',
+22 silly mapToRegistry   scope: '@angular',
+22 silly mapToRegistry   name: '@angular/animations',
+22 silly mapToRegistry   rawSpec: '',
+22 silly mapToRegistry   spec: 'latest',
+22 silly mapToRegistry   type: 'tag' }
+23 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fanimations
+24 verbose addNameVersion registry:https://registry.npmjs.org/@angular%2fanimations not in flight; fetching
+25 verbose request uri https://registry.npmjs.org/@angular%2fanimations
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 8:50:03 PM
+28 verbose request id 129c8d87b1ba09a8
+29 http request GET https://registry.npmjs.org/@angular%2fanimations
+30 http 200 https://registry.npmjs.org/@angular%2fanimations
+31 verbose headers { 'content-type': 'application/json',
+31 verbose headers   server: 'nginx/1.10.1',
+31 verbose headers   'last-modified': 'Wed, 26 Apr 2017 16:07:18 GMT',
+31 verbose headers   etag: 'W/"5900c5b6-4f2c"',
+31 verbose headers   'content-encoding': 'gzip',
+31 verbose headers   'cache-control': 'max-age=0',
+31 verbose headers   'transfer-encoding': 'chunked',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Thu, 04 May 2017 01:50:04 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   age: '0',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-ord1729-ORD',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1493862604.822716,VS0,VE402',
+31 verbose headers   vary: 'Accept-Encoding' }
+32 silly get cb [ 200,
+32 silly get   { 'content-type': 'application/json',
+32 silly get     server: 'nginx/1.10.1',
+32 silly get     'last-modified': 'Wed, 26 Apr 2017 16:07:18 GMT',
+32 silly get     etag: 'W/"5900c5b6-4f2c"',
+32 silly get     'content-encoding': 'gzip',
+32 silly get     'cache-control': 'max-age=0',
+32 silly get     'transfer-encoding': 'chunked',
+32 silly get     'accept-ranges': 'bytes',
+32 silly get     date: 'Thu, 04 May 2017 01:50:04 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     age: '0',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-ord1729-ORD',
+32 silly get     'x-cache': 'MISS',
+32 silly get     'x-cache-hits': '0',
+32 silly get     'x-timer': 'S1493862604.822716,VS0,VE402',
+32 silly get     vary: 'Accept-Encoding' } ]
+33 verbose get saving @angular/animations to /Users/kumarn/.npm/registry.npmjs.org/_40angular_252fanimations/.cache.json
+34 verbose correctMkdir /Users/kumarn/.npm correctMkdir not in flight; initializing
+35 silly mapToRegistry name @angular/animations
+36 silly mapToRegistry scope (from package name) @angular
+37 verbose mapToRegistry no registry URL found in name for scope @angular
+38 silly mapToRegistry using default registry
+39 silly mapToRegistry registry https://registry.npmjs.org/
+40 silly mapToRegistry data Result {
+40 silly mapToRegistry   raw: '@angular/animations',
+40 silly mapToRegistry   scope: '@angular',
+40 silly mapToRegistry   name: '@angular/animations',
+40 silly mapToRegistry   rawSpec: '',
+40 silly mapToRegistry   spec: 'latest',
+40 silly mapToRegistry   type: 'tag' }
+41 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fanimations
+42 verbose addRemoteTarball https://registry.npmjs.org/@angular/animations/-/animations-4.0.2.tgz not in flight; adding
+43 verbose addRemoteTarball [ 'https://registry.npmjs.org/@angular/animations/-/animations-4.0.2.tgz',
+43 verbose addRemoteTarball   '79f6a77d8b6e19b2d1fd9fa175f78143cd689727' ]
+44 info retry fetch attempt 1 at 8:50:04 PM
+45 info attempt registry request try #1 at 8:50:04 PM
+46 http fetch GET https://registry.npmjs.org/@angular/animations/-/animations-4.0.2.tgz
+47 http fetch 200 https://registry.npmjs.org/@angular/animations/-/animations-4.0.2.tgz
+48 silly fetchAndShaCheck shasum 79f6a77d8b6e19b2d1fd9fa175f78143cd689727
+49 verbose addTmpTarball /var/folders/k9/b6lchds92z5fjr0zgljqb1d095ctdk/T/npm-64062-a174c1f5/registry.npmjs.org/_40angular/animations/-/animations-4.0.2.tgz not in flight; adding
+50 verbose addTmpTarball already have metadata; skipping unpack for @angular/animations@4.0.2
+51 verbose correctMkdir /Users/kumarn/.npm correctMkdir not in flight; initializing
+52 silly cache afterAdd @angular/animations@4.0.2
+53 verbose afterAdd /Users/kumarn/.npm/@angular/animations/4.0.2/package/package.json not in flight; writing
+54 verbose correctMkdir /Users/kumarn/.npm correctMkdir not in flight; initializing
+55 verbose afterAdd /Users/kumarn/.npm/@angular/animations/4.0.2/package/package.json written
+56 silly install resolved [ { name: '@angular/animations',
+56 silly install resolved     version: '4.0.2',
+56 silly install resolved     description: 'Angular - animations integration with web-animationss',
+56 silly install resolved     main: './bundles/animations.umd.js',
+56 silly install resolved     module: './@angular/animations.es5.js',
+56 silly install resolved     es2015: './@angular/animations.js',
+56 silly install resolved     typings: './animations.d.ts',
+56 silly install resolved     author: { name: 'angular' },
+56 silly install resolved     license: 'MIT',
+56 silly install resolved     peerDependencies: { '@angular/core': '4.0.2' },
+56 silly install resolved     repository:
+56 silly install resolved      { type: 'git',
+56 silly install resolved        url: 'git+https://github.com/angular/angular.git' },
+56 silly install resolved     bugs: { url: 'https://github.com/angular/angular/issues' },
+56 silly install resolved     homepage: 'https://github.com/angular/angular#readme',
+56 silly install resolved     _id: '@angular/animations@4.0.2',
+56 silly install resolved     scripts: {},
+56 silly install resolved     _shasum: '79f6a77d8b6e19b2d1fd9fa175f78143cd689727',
+56 silly install resolved     _from: '@angular/animations@4.0.2',
+56 silly install resolved     _resolved: 'https://registry.npmjs.org/@angular/animations/-/animations-4.0.2.tgz',
+56 silly install resolved     _npmVersion: '3.10.10',
+56 silly install resolved     _nodeVersion: '6.10.2',
+56 silly install resolved     _npmUser: { name: 'angular', email: 'angular-core+npm@google.com' },
+56 silly install resolved     dist:
+56 silly install resolved      { shasum: '79f6a77d8b6e19b2d1fd9fa175f78143cd689727',
+56 silly install resolved        tarball: 'https://registry.npmjs.org/@angular/animations/-/animations-4.0.2.tgz' },
+56 silly install resolved     maintainers: [ [Object] ],
+56 silly install resolved     _npmOperationalInternal:
+56 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+56 silly install resolved        tmp: 'tmp/animations-4.0.2.tgz_1491950575015_0.9875433840788901' },
+56 silly install resolved     directories: {} } ]
+57 info install @angular/animations@4.0.2 into /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2
+58 info installOne @angular/animations@4.0.2
+59 verbose installOne of @angular/animations to /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2 not in flight; installing
+60 verbose correctMkdir /Users/kumarn/.npm/_locks correctMkdir not in flight; initializing
+61 verbose lock using /Users/kumarn/.npm/_locks/angular-animations-61fae8171c42e4b7.lock for /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations
+62 silly install write writing @angular/animations 4.0.2 to /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations
+63 verbose unbuild node_modules/@angular/animations
+64 silly gentlyRm /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations is being purged from base /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2
+65 verbose gentlyRm don't care about contents; nuking /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations
+66 verbose tar unpack /Users/kumarn/.npm/@angular/animations/4.0.2/package.tgz
+67 verbose tar unpacking to /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations
+68 silly gentlyRm /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations is being purged
+69 verbose gentlyRm don't care about contents; nuking /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations
+70 silly gunzTarPerm modes [ '755', '644' ]
+71 silly gunzTarPerm extractEntry package.json
+72 silly gunzTarPerm extractEntry README.md
+73 silly gunzTarPerm extractEntry browser.d.ts
+74 silly gunzTarPerm extractEntry animations.metadata.json
+75 silly gunzTarPerm extractEntry browser/package.json
+76 silly gunzTarPerm extractEntry browser/index.d.ts
+77 silly gunzTarPerm extractEntry browser/index.metadata.json
+78 silly gunzTarPerm extractEntry browser/public_api.d.ts
+79 silly gunzTarPerm extractEntry browser/src/animation_engine.d.ts
+80 silly gunzTarPerm extractEntry browser/src/browser.d.ts
+81 silly gunzTarPerm extractEntry browser/src/dsl/animation.d.ts
+82 silly gunzTarPerm extractEntry browser/src/dsl/animation_dsl_visitor.d.ts
+83 silly gunzTarPerm extractEntry browser/src/dsl/animation_timeline_instruction.d.ts
+84 silly gunzTarPerm extractEntry browser/src/dsl/animation_timeline_visitor.d.ts
+85 silly gunzTarPerm extractEntry browser/src/dsl/animation_transition_expr.d.ts
+86 silly gunzTarPerm extractEntry browser/src/dsl/animation_transition_factory.d.ts
+87 silly gunzTarPerm extractEntry browser/src/dsl/animation_transition_instruction.d.ts
+88 silly gunzTarPerm extractEntry browser/src/dsl/animation_trigger.d.ts
+89 silly gunzTarPerm extractEntry browser/src/dsl/animation_validator_visitor.d.ts
+90 silly gunzTarPerm extractEntry browser/src/dsl/style_normalization/animation_style_normalizer.d.ts
+91 silly gunzTarPerm extractEntry browser/src/dsl/style_normalization/web_animations_style_normalizer.d.ts
+92 silly gunzTarPerm extractEntry browser/src/private_export.d.ts
+93 silly gunzTarPerm extractEntry browser/src/render/animation_driver.d.ts
+94 silly gunzTarPerm extractEntry browser/src/render/animation_driver.metadata.json
+95 silly gunzTarPerm extractEntry browser/src/render/animation_engine_instruction.d.ts
+96 silly gunzTarPerm extractEntry browser/src/render/dom_animation_engine.d.ts
+97 silly gunzTarPerm extractEntry browser/src/render/noop_animation_engine.d.ts
+98 silly gunzTarPerm extractEntry browser/src/render/web_animations/dom_animation.d.ts
+99 silly gunzTarPerm extractEntry browser/src/render/web_animations/web_animations_driver.d.ts
+100 silly gunzTarPerm extractEntry browser/src/render/web_animations/web_animations_player.d.ts
+101 silly gunzTarPerm extractEntry browser/src/util.d.ts
+102 silly gunzTarPerm extractEntry browser/testing/package.json
+103 silly gunzTarPerm extractEntry browser/testing/index.d.ts
+104 silly gunzTarPerm extractEntry browser/testing/index.metadata.json
+105 silly gunzTarPerm extractEntry browser/testing/src/mock_animation_driver.d.ts
+106 silly gunzTarPerm extractEntry browser/testing/src/mock_animation_driver.metadata.json
+107 silly gunzTarPerm extractEntry browser/testing/src/testing.d.ts
+108 silly gunzTarPerm extractEntry browser/testing/src/testing.metadata.json
+109 silly gunzTarPerm extractEntry browser/testing.d.ts
+110 silly gunzTarPerm extractEntry browser/testing.metadata.json
+111 silly gunzTarPerm extractEntry @angular/animations.es5.js
+112 silly gunzTarPerm extractEntry @angular/animations.js
+113 silly gunzTarPerm extractEntry @angular/animations/browser.es5.js
+114 silly gunzTarPerm extractEntry @angular/animations/browser.js
+115 silly gunzTarPerm extractEntry @angular/animations/browser/testing.es5.js
+116 silly gunzTarPerm extractEntry @angular/animations/browser/testing.js
+117 silly gunzTarPerm extractEntry @angular/animations/browser/testing.es5.js.map
+118 silly gunzTarPerm extractEntry @angular/animations/browser/testing.js.map
+119 silly gunzTarPerm extractEntry @angular/animations/browser.es5.js.map
+120 silly gunzTarPerm extractEntry @angular/animations/browser.js.map
+121 silly gunzTarPerm extractEntry @angular/animations.es5.js.map
+122 silly gunzTarPerm extractEntry @angular/animations.js.map
+123 silly gunzTarPerm extractEntry browser.metadata.json
+124 silly gunzTarPerm extractEntry bundles/animations-browser-testing.umd.js
+125 silly gunzTarPerm extractEntry bundles/animations-browser-testing.umd.min.js
+126 silly gunzTarPerm extractEntry bundles/animations.umd.min.js
+127 silly gunzTarPerm extractEntry bundles/animations-browser.umd.js
+128 silly gunzTarPerm extractEntry bundles/animations.umd.js
+129 silly gunzTarPerm extractEntry bundles/animations-browser.umd.min.js
+130 silly gunzTarPerm extractEntry bundles/animations-browser-testing.umd.js.map
+131 silly gunzTarPerm extractEntry bundles/animations-browser.umd.min.js.map
+132 silly gunzTarPerm extractEntry bundles/animations-browser.umd.js.map
+133 silly gunzTarPerm extractEntry bundles/animations.umd.js.map
+134 silly gunzTarPerm extractEntry bundles/animations-browser-testing.umd.min.js.map
+135 silly gunzTarPerm extractEntry bundles/animations.umd.min.js.map
+136 silly gunzTarPerm extractEntry animations.d.ts
+137 silly gunzTarPerm extractEntry public_api.d.ts
+138 silly gunzTarPerm extractEntry src/animation_event.d.ts
+139 silly gunzTarPerm extractEntry src/animation_metadata.d.ts
+140 silly gunzTarPerm extractEntry src/animations.d.ts
+141 silly gunzTarPerm extractEntry src/players/animation_group_player.d.ts
+142 silly gunzTarPerm extractEntry src/players/animation_player.d.ts
+143 silly gunzTarPerm extractEntry src/private_export.d.ts
+144 silly gunzTarPerm extractEntry src/util.d.ts
+145 verbose write writing to /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations/package.json
+146 info preinstall @angular/animations@4.0.2
+147 verbose readDependencies loading dependencies from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations/package.json
+148 silly prepareForInstallMany adding @angular/core@4.0.2 from @angular/animations peerDependencies
+149 warn peerDependencies The peer dependency @angular/core@4.0.2 included from @angular/animations will no
+150 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+151 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+152 verbose readDependencies loading dependencies from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations/package.json
+153 silly install resolved []
+154 verbose about to build /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations
+155 info build /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations
+156 info linkStuff @angular/animations@4.0.2
+157 silly linkStuff @angular/animations@4.0.2 has /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules as its parent node_modules
+158 verbose linkBins @angular/animations@4.0.2
+159 verbose linkMans @angular/animations@4.0.2
+160 verbose rebuildBundles @angular/animations@4.0.2
+161 info install @angular/animations@4.0.2
+162 info postinstall @angular/animations@4.0.2
+163 verbose readDependencies loading dependencies from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/package.json
+164 verbose targetResolver reading package data from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/rxjs/package.json
+165 verbose targetResolver reading package data from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/zone.js/package.json
+166 verbose targetResolver reading package data from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations/package.json
+167 verbose targetResolver reading package data from /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/core/package.json
+168 verbose already installed skipping @angular/core@4.0.2 /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2
+169 silly install resolved []
+170 verbose unlock done using /Users/kumarn/.npm/_locks/angular-animations-61fae8171c42e4b7.lock for /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/node_modules/@angular/animations
+171 verbose validateInstall loading /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2/package.json for validation
+172 verbose stack Error: The package @angular/core@4.1.0 does not satisfy its siblings' peerDependencies requirements!
+172 verbose stack     at /Users/kumarn/.nvm/versions/node/v4.5.0/lib/node_modules/npm/lib/install.js:125:32
+172 verbose stack     at /Users/kumarn/.nvm/versions/node/v4.5.0/lib/node_modules/npm/lib/install.js:268:7
+172 verbose stack     at /Users/kumarn/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+172 verbose stack     at /Users/kumarn/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+172 verbose stack     at cb (/Users/kumarn/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+172 verbose stack     at /Users/kumarn/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+172 verbose stack     at cb (/Users/kumarn/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+172 verbose stack     at /Users/kumarn/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+172 verbose stack     at asyncMap (/Users/kumarn/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:27:18)
+172 verbose stack     at next (/Users/kumarn/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:234:5)
+173 verbose cwd /Users/kumarn/Google Drive/Me/Personal Projects/naveenkd26.github.io/angular2
+174 error Darwin 15.6.0
+175 error argv "/Users/kumarn/.nvm/versions/node/v4.5.0/bin/node" "/Users/kumarn/.nvm/versions/node/v4.5.0/bin/npm" "install" "@angular/animations@4.0.2" "--save"
+176 error node v4.5.0
+177 error npm  v2.15.9
+178 error code EPEERINVALID
+179 error peerinvalid The package @angular/core@4.1.0 does not satisfy its siblings' peerDependencies requirements!
+179 error peerinvalid Peer @angular/animations@4.0.2 wants @angular/core@4.0.2
+180 verbose exit [ 1, true ]
