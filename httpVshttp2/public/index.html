@@ -7,19 +7,40 @@
         </script>
         <!--https://www.imgonline.com.ua/eng/cut-photo-into-pieces-result.php-->
         <script>
-            
+            var loadImages = function(callCount){
+                for(i=0; i < callCount; i++){
+                    $.ajax({
+                      url: 'http://localhost:8080/images/image_part_001.jpg',
+                      context: document.body
+                    }).done(function(data){
+                      //$('#loadedImages').prepend('<img id="theImg" src=data />');
+                    });
+                }
+            };
+
             $(document).ready(function(){
-                $.ajax({
-                    url: 'http://localhost:8080/images/image_part_001.jpg',
-                    context: document.body
-                }).done(function() {
-                    console.log('IMage loaded ########');
-                });
+                var height = "5px";
+                var imageTag = document.createElement("img");  
+
+                var att = document.createAttribute("style");       // Create a "class" attribute
+                att.value = "position: absolute;" + "left:" + 50 + "px;top:" + 10 + "px;";
+
+                $('#loadedImages').prepend('<img id="theImg" style="position: absolute;left: height;top:5px;" src="http://localhost:8080/images/image_part_001.jpg" height:"10" width:"10" >');
+                //$('#loadedImages').prepend('<img id="theImg" src="http://localhost:8080/images/image_part_002.jpg" height:"10" width:"10" >');
+                //$('#loadedImages').prepend('<br/>');
+                //$('#loadedImages').prepend('<img id="theImg" src="http://localhost:8080/images/image_part_003.jpg" height:"10" width:"10" >');
+                // $.ajax({
+                //     url: 'http://localhost:8080/images/image_part_001.jpg',
+                //     context: document.body
+                // }).done(function(data) {
+                //     console.log('IMage loaded ########');
+                //     $('#loadedImages').prepend('<img id="theImg" src=data />');
+                // });
             });
             
         </script>
     </head>
     <body>
-        Hello there!
+        <div id='loadedImages'></div>
     </body>
 </html>
