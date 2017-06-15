@@ -7,35 +7,26 @@
         </script>
         <!--https://www.imgonline.com.ua/eng/cut-photo-into-pieces-result.php-->
         <script>
-            var loadImages = function(callCount){
-                for(i=0; i < callCount; i++){
-                    $.ajax({
-                      url: 'http://localhost:8080/images/image_part_001.jpg',
-                      context: document.body
-                    }).done(function(data){
-                      //$('#loadedImages').prepend('<img id="theImg" src=data />');
-                    });
+            var loadImages = function(){
+                var imageHeight = 6, imageWidth = 8; 
+                for(j=0; j<30; j++){
+                   for(i=1; i <=30; i++){
+                      var imageNo = (j * 30) + i; 
+                      var pixelIndexFromLeft =  i * imageWidth;
+                      var pixelIndexFromTop =  (j + 1) * imageHeight;
+                      var imageElement = document.createElement("img");  
+                      imageElement.setAttribute("src","http://localhost:8080/images/image_part_" + imageNo.toLocaleString(undefined, {minimumIntegerDigits: 3}) + ".jpg");
+                      imageElement.setAttribute("style", "position: absolute;" + "left:" + pixelIndexFromLeft + "px;top:" + pixelIndexFromTop + "px;");
+                      imageElement.setAttribute("height", imageHeight);
+                      imageElement.setAttribute("width", imageWidth); 
+                      //console.log(imageTag);
+                      $('#loadedImages').prepend(imageElement);
+                   }
                 }
             };
 
             $(document).ready(function(){
-                var height = "5px";
-                var imageTag = document.createElement("img");  
-
-                var att = document.createAttribute("style");       // Create a "class" attribute
-                att.value = "position: absolute;" + "left:" + 50 + "px;top:" + 10 + "px;";
-
-                $('#loadedImages').prepend('<img id="theImg" style="position: absolute;left: height;top:5px;" src="http://localhost:8080/images/image_part_001.jpg" height:"10" width:"10" >');
-                //$('#loadedImages').prepend('<img id="theImg" src="http://localhost:8080/images/image_part_002.jpg" height:"10" width:"10" >');
-                //$('#loadedImages').prepend('<br/>');
-                //$('#loadedImages').prepend('<img id="theImg" src="http://localhost:8080/images/image_part_003.jpg" height:"10" width:"10" >');
-                // $.ajax({
-                //     url: 'http://localhost:8080/images/image_part_001.jpg',
-                //     context: document.body
-                // }).done(function(data) {
-                //     console.log('IMage loaded ########');
-                //     $('#loadedImages').prepend('<img id="theImg" src=data />');
-                // });
+                loadImages(1);
             });
             
         </script>
