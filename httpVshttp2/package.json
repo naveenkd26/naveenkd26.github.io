@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node buildDemo.js && npm run replace",
+    "replace": "replace \"http://localhost:8080/images/\" \"https://naveenkd26.github.io/httpVshttp2/public/images/\" demo/index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "cp-file": "^4.2.0",
+    "replace": "^0.3.0"
   }
 }
