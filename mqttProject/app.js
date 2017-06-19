@@ -1,6 +1,6 @@
 // location = {
-//     hostname: 'localhost',
-//     port: 1883
+//     hostname: 'test.mosquitto.org',
+//     port: 8080
 // };
 // client = new Paho.MQTT.Client(location.hostname, Number(location.port), "naveenLaptop");
 // client.onConnectionLost = onConnectionLost;
@@ -24,11 +24,26 @@
 //   client.disconnect(); 
 // };
 
+
+// public MQTT urls
+// https://github.com/mqtt/mqtt.github.io/wiki/public_brokers
+// https://iot.eclipse.org/getting-started#sandboxes
+// https://test.mosquitto.org/
+// config - https://mosquitto.org/man/mosquitto-conf-5.html
+// http://www.eclipse.org/paho/clients/js/
+// ws://iot.eclipse.org:80/ws
+
+//ws://test.mosquitto.org:8080/ws
+
+
 var connection = new Mosquitto();
 console.log('Created a object dude');
 // mosq.connect('ws://localhost:1883/mqtt', true);
 
-connection.connect('ws://localhost:9001/mqtt', true);
+//connection.connect('ws://iot.eclipse.org:80/ws', true); - WORKING
+//connection.connect('ws://test.mosquitto.org:8080', true); - NOT WORKING
+connection.connect('ws://test.mosquitto.org:8080/mqtt', true);
+//connection.connect('ws://192.168.99.100:8080', true);
 
 
 	// this.onconnect = null;
