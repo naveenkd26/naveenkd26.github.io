@@ -1,13 +1,9 @@
 define([], function(){
-    // var greet = {
-    //     sayHello = function(){
-    //         alert('Hello.');
-    //     }
-    // };
-    
-    return {
-        sayHello = function(){
+    var greet = {
+        sayHello : function(){
             alert('Hello.');
         }
     };
+    
+    return greet;
 });
