@@ -1,0 +1,21 @@
+https://www.digitalocean.com/community/questions/how-to-setup-a-mosquitto-mqtt-server-and-receive-data-from-owntracks
+
+Cloud mosquitto paths
+mosquitto db
+/var/lib/mosquitto/
+config
+/etc/mosquitto
+
+mkdir -p /test-mqtt/mqtt/config/
+mkdir -p /test-mqtt/mqtt/data/
+mkdir -p /test-mqtt/mqtt/log/
+
+docker run -ti -p 1883:1883 -p 9001:9001 \
+-v /test-mqtt/mqtt/config:/mqtt/config:ro \
+-v /test-mqtt/mqtt/log:/mqtt/log \
+-v /test-mqtt/mqtt/data/:/mqtt/data/ \
+toke/mosquitto
+
+cd /test-mqtt/mqtt/config
+
+docker run -it -p 1883:1883 -p 9001:9001 -v /test-mqtt/mqtt/config/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto

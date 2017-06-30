@@ -1,11 +1,11 @@
 // location = {
-//     hostname: 'test.mosquitto.org',
-//     port: 8080
+//     hostname: 'mqtt.iotbeans.com',
+//     port: 8083
 // };
 // client = new Paho.MQTT.Client(location.hostname, Number(location.port), "naveenLaptop");
 // client.onConnectionLost = onConnectionLost;
 // client.onMessageArrived = onMessageArrived;
-// client.connect({onSuccess:onConnect});s
+// client.connect({onSuccess:onConnect});
 
 // function onConnect() {
 //   // Once a connection has been made, make a subscription and send a message.
@@ -40,15 +40,19 @@ var connection = new Mosquitto();
 console.log('Created a object dude');
 // mosq.connect('ws://localhost:1883/mqtt', true);
 
+
+// //http://67.207.95.103/
 //connection.connect('ws://iot.eclipse.org:80/ws', true); - WORKING
-//connection.connect('ws://test.mosquitto.org:8080', true); - NOT WORKING
-connection.connect('ws://test.mosquitto.org:8080/mqtt', true);
-//connection.connect('ws://192.168.99.100:8080', true);
+// //connection.connect('ws://test.mosquitto.org:8080', true); - NOT WORKING
+connection.connect('ws://192.168.99.100:1883', true);
+// //connection.connect('ws://test.mosquitto.org:8080/mqtt', true);
+// connection.connect('wss://mqtt.iotbeans.com:8083/mqtt', true);
+// //connection.connect('ws://192.168.99.100:8080', true);
 
 
-	// this.onconnect = null;
-	// this.ondisconnect = null;
-	// this.onmessage = null;
+	this.onconnect = null;
+	this.ondisconnect = null;
+	this.onmessage = null;
 
 
   connection.onconnect = function(msg){
