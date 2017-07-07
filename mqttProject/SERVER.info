@@ -12,10 +12,75 @@ mkdir -p /test-mqtt/mqtt/log/
 
 docker run -ti -p 1883:1883 -p 9001:9001 \
 -v /test-mqtt/mqtt/config:/mqtt/config:ro \
--v /test-mqtt/mqtt/log:/mqtt/log \
--v /test-mqtt/mqtt/data/:/mqtt/data/ \
+-v /test-mqtt/mqtt/log:/mqtt/log:rw \
+-v /test-mqtt/mqtt/data/:/mqtt/data/:rw \
 toke/mosquitto
 
 cd /test-mqtt/mqtt/config
 
-docker run -it -p 1883:1883 -p 9001:9001 -v /test-mqtt/mqtt/config/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
+docker run -it -p 1883:1883 -p 9001:9001 -v /test-mqtt/mqtt/config/:/mosquitto/config/ \
+ -v /test-mqtt/mqtt/log/:/mosquitto/log/ \
+ -v /test-mqtt/mqtt/config/:/mosquitto/config/ \
+ eclipse-mosquitto
+
+
+docker run -ti --net=host -p 1883:1883 -p 9004:9004 \
+-v /test-mqtt/mqtt/data/:/mqtt/data/:rw \
+-v /test-mqtt/mqtt/logs:/mqtt/log:rw \
+-v /test-mqtt/mqtt/config/:/mqtt/config:ro \
+ --name mqtt-int -d toke/mosquitto
+
+
+docker run -it -p 1883:1883 -p 9001:9001 eclipse-mosquitto
+
+docker run -it -p 1883:1883 -p 9001:9001 -v ~/test-mqtt/mqtt/config/:/mosquitto/config/  -v ~/test-mqtt/mqtt/log/:/mosquitto/log/ eclipse-mosquitto
+
+
+/usr/local/etc/mosquitto/mosquitto.conf
+
+brew services start mosquitto
+
+mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
+
+ /usr/local/Cellar/mosquitto/1.4.12
+
+
+ ==> Pouring openssl-1.0.2l.el_capitan.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the SystemRoots
+keychain. To add additional certificates (e.g. the certificates added in
+the System keychain), place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/openssl/lib
+    CPPFLAGS: -I/usr/local/opt/openssl/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/openssl/lib/pkgconfig
+
+==> Summary
+🍺  /usr/local/Cellar/openssl/1.0.2l: 1,709 files, 12.1MB
+==> Installing mosquitto
+==> Downloading https://homebrew.bintray.com/bottles/mosquitto-1.4.12.el_capitan
+######################################################################## 100.0%
+==> Pouring mosquitto-1.4.12.el_capitan.bottle.tar.gz
+==> Caveats
+mosquitto has been installed with a default configuration file.
+You can make changes to the configuration by editing:
+    /usr/local/etc/mosquitto/mosquitto.conf
+
+To have launchd start mosquitto now and restart at login:
+  brew services start mosquitto
+Or, if you don't want/need a background service you can just run:
+  mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
+==> Summary
+🍺  /usr/local/Cellar/mosquitto/1.4.12: 33 files, 626.4KB
