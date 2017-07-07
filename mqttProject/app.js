@@ -1,11 +1,3 @@
-// location = {
-//     hostname: 'mqtt.iotbeans.com',
-//     port: 8083
-// };
-// client = new Paho.MQTT.Client(location.hostname, Number(location.port), "naveenLaptop");
-// client.onConnectionLost = onConnectionLost;
-// client.onMessageArrived = onMessageArrived;
-// client.connect({onSuccess:onConnect});
 
 // function onConnect() {
 //   // Once a connection has been made, make a subscription and send a message.
@@ -24,6 +16,12 @@
 //   client.disconnect(); 
 // };
 
+// //client = new Paho.MQTT.Client('ws://iot.eclipse.org:80/ws', "naveenLaptop");
+// //client = new Paho.MQTT.Client('ws://127.0.0.1:9001/ws', "naveenLaptop");
+// client.onConnectionLost = onConnectionLost;
+// client.onMessageArrived = onMessageArrived;
+// client.connect({onSuccess:onConnect});
+
 
 // public MQTT urls
 // https://github.com/mqtt/mqtt.github.io/wiki/public_brokers
@@ -32,28 +30,15 @@
 // config - https://mosquitto.org/man/mosquitto-conf-5.html
 // http://www.eclipse.org/paho/clients/js/
 // ws://iot.eclipse.org:80/ws
-
 //ws://test.mosquitto.org:8080/ws
 
+// ############################################################################################################
 
 var connection = new Mosquitto();
-console.log('Created a object dude');
-// mosq.connect('ws://localhost:1883/mqtt', true);
-
-
-// //http://67.207.95.103/
-//connection.connect('ws://iot.eclipse.org:80/ws', true); - WORKING
+// http://67.207.95.103/
 // //connection.connect('ws://test.mosquitto.org:8080', true); - NOT WORKING
-connection.connect('ws://192.168.99.100:1883', true);
-// //connection.connect('ws://test.mosquitto.org:8080/mqtt', true);
-// connection.connect('wss://mqtt.iotbeans.com:8083/mqtt', true);
-// //connection.connect('ws://192.168.99.100:8080', true);
-
-
-	this.onconnect = null;
-	this.ondisconnect = null;
-	this.onmessage = null;
-
+// //connection.connect('ws://test.mosquitto.org:8080/mqtt', true); - NOT WORKING
+// connection.connect('wss://mqtt.iotbeans.com:8083/mqtt', true); - NOT WORKING
 
   connection.onconnect = function(msg){
       console.log('On CONNECT Handler ' + msg);
@@ -68,6 +53,8 @@ connection.connect('ws://192.168.99.100:1883', true);
    connection.onmessage = function(msg){
       console.log('On onmessage Handler ' + msg);
   };
+  
+  connection.connect('ws://127.0.0.1:9001/ws', true);
 
 
 
