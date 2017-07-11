@@ -84,3 +84,30 @@ Or, if you don't want/need a background service you can just run:
   mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
 ==> Summary
 🍺  /usr/local/Cellar/mosquitto/1.4.12: 33 files, 626.4KB
+
+
+https://www.safaribooksonline.com/library/view/sams-teach-yourself/9780134445786/ch01.html#ch01
+
+
+ngrok - Secure tunnels to localhost
+
+http://www.eclipse.org/paho/clients/js/utility/
+
+https://doc.splicemachine.com/Developers/IngestionAndStreaming/MQTTSpark.html
+
+Firmware upgrade
+hawkbit (software updates)-  https://projects.eclipse.org/proposals/hawkbit
+
+spark-notebook
+ docker pull andypetrella/spark-notebook:0.7.0-scala-2.11.8-spark-2.1.1-hadoop-2.7.2
+ docker run -p 9001:9001 andypetrella/spark-notebook:0.7.0-scala-2.11.8-spark-2.1.1-hadoop-2.7.2
+
+Eclipse Hono - https://www.eclipse.org/hono/api/
+IoT Connectior - handles authentication, crendentials, command and control api
+
+Basic spark streaming steps
+https://www.safaribooksonline.com/library/view/learning-spark-streaming/9781491944233/ch03.html
+http://bahir.apache.org/docs/spark/current/spark-streaming-mqtt/
+https://doc.splicemachine.com/Developers/IngestionAndStreaming/MQTTSpark.html
+https://spark.apache.org/docs/latest/streaming-programming-guide.html
+https://www.safaribooksonline.com/library/view/sams-teach-yourself/9780134445786/ch01.html
